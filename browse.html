@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $(".twoslider").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [35, 200],
+                slide: function(event, ui) {
+                    $("#price").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#price").val("$" + $("#slider-3").slider("values", 0) +
+                " - $" + $("#slider-3").slider("values", 1));
+        });
+        $(function() {
+            $(".slider").slider();
+        });
+    </script>
+    <script src="main.js"></script>
+    <title>Browesing</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="w3-container w3-green w3-top borderless">
+            <div class="w3-opennav w3-xlarge w3-btn w3-green" id="openNav" style="padding: 0;" onclick="open_nav()">&#9776;</div>
+            <i class="title">Browse</i>
+            <div class="w3-opennav w3-xlarge w3-btn w3-green w3-right" id="logout-button" style="padding: 0;" onclick=""><i style="font-size:24px" class="fa">&#xf011;</i></div>
+        </div>
+        <div class="w3-content w3-center" id="img-outer">
+            <div class="w3-container" id="img-container">
+                <div class="borderless w3-card">
+                    <div class="w3-display-container">
+                        <img id="pf-img" class="profile-pic" src="https://www.mmfoodmarket.com/images/default-source/products/butcher/boneless-chicken-breasts-seasoned-and-skinless.jpg?sfvrsn=0" alt="pic" />
+                        <div class="w3-display-bottomleft">Chicken</div>
+                    </div>
+                    <h4 class="w3-white outerless">
+                        Age:24
+                        <br><br> Hi there like my breast?
+                    </h4>
+                </div>
+            </div>
+            <div class="w3-bottom">
+                <button type="button" class="half-btn w3-green">Yes</button>
+                <button type="button" class="half-btn w3-red">No</button>
+            </div>
+        </div>
+    </div>
+    <div class="w3-sidenav w3-white w3-card-2" style="display:none" id="side-nav">
+        <a href="javascript:void(0)" onclick="close_nav()" class="w3-closenav w3-large">Close &times;</a>
+        <a href="#">Browse</a>
+        <a onclick="filtering()">Search Filter</a>
+        <a href="#">Profile</a>
+        <a href="#">Matches</a>
+    </div>
+    <div id="filter" class="w3-modal">
+        <div class="w3-container center-object max-400">
+            <span onclick="document.getElementById('filter').style.display='none'" class="w3-closebtn"></span>
+            <p>
+                <form class="w3-container" action="" method="post">
+                    <p>
+                        <div class="twoslider"></div>
+                    </p>
+                    <p>
+                        <div class="slider"></div>
+                    </p>
+                    <p>
+                        <div class="slider"></div>
+                    </p>
+                    <p>
+                        <button type="button" class="w3-btn-block w3-green">Apply</button>
+                    </p>
+                </form>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

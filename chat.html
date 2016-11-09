@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="chat.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <title>Dollie</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="w3-container w3-green w3-top borderless">
+            <div class="w3-opennav w3-xlarge w3-btn w3-green" id="openNav" style="padding: 0;" onclick="open_nav()">&#9776;</div>
+            <i class="title">Dollie</i>
+            <div class="w3-opennav w3-xlarge w3-btn w3-green w3-right" id="logout-button" style="padding: 0;" onclick=""><i style="font-size:24px" class="fa">&#xf011;</i></div>
+        </div>
+        <div class="chatbox">
+            <div class="chatlog">
+                <div class="chat self">
+                    <img class="w3-circle user-photo" src="http://img.memecdn.com/Hot-chick_o_87354.jpg" alt="self">
+                    <p class="chat-message">Hallo ma se..</p>
+                </div>
+                <div class="chat friend">
+                    <img class="w3-circle user-photo" src="https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-0/q82/p206x206/10986667_801590539896131_2149355886087880237_n.jpg?oh=123e4a1e0224f4c1ff8edb1fffbac45f&oe=588BBC43&__gda__=1490380613_e442f1b3c21a3385e339b8cbb00f79b7"
+                        alt="self">
+                    <p class="chat-message">Longer text as the previous one xD.......sdfsfsdf sdfsf sdf</p>
+                </div>
+                <div class="chat self">
+                    <img class="w3-circle user-photo" src="http://img.memecdn.com/Hot-chick_o_87354.jpg" alt="self">
+                    <p class="chat-message">Hallo ma se..</p>
+                </div>
+                <div class="chat friend">
+                    <img class="w3-circle user-photo" src="https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-0/q82/p206x206/10986667_801590539896131_2149355886087880237_n.jpg?oh=123e4a1e0224f4c1ff8edb1fffbac45f&oe=588BBC43&__gda__=1490380613_e442f1b3c21a3385e339b8cbb00f79b7"
+                        alt="self">
+                    <p class="chat-message">Longer text as the previous one xD.......sdfsfsdf sdfsf sdf</p>
+                </div>
+                <div class="chat self">
+                    <img class="w3-circle user-photo" src="http://img.memecdn.com/Hot-chick_o_87354.jpg" alt="self">
+                    <p class="chat-message">Hallo ma se..</p>
+                </div>
+                <div class="chat friend">
+                    <img class="w3-circle user-photo" src="https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-0/q82/p206x206/10986667_801590539896131_2149355886087880237_n.jpg?oh=123e4a1e0224f4c1ff8edb1fffbac45f&oe=588BBC43&__gda__=1490380613_e442f1b3c21a3385e339b8cbb00f79b7"
+                        alt="self">
+                    <p class="chat-message">Longer text as the previous one xD.......sdfsfsdf sdfsf sdf</p>
+                </div>
+                <div class="chat self">
+                    <img class="w3-circle user-photo" src="http://img.memecdn.com/Hot-chick_o_87354.jpg" alt="self">
+                    <p class="chat-message">Hallo ma se..</p>
+                </div>
+                <div class="chat friend">
+                    <img class="w3-circle user-photo" src="https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-0/q82/p206x206/10986667_801590539896131_2149355886087880237_n.jpg?oh=123e4a1e0224f4c1ff8edb1fffbac45f&oe=588BBC43&__gda__=1490380613_e442f1b3c21a3385e339b8cbb00f79b7"
+                        alt="self">
+                    <p class="chat-message">Longer text as the previous one xD.......sdfsfsdf sdfsf sdf</p>
+                </div>
+                <div class="chat self">
+                    <img class="w3-circle user-photo" src="http://img.memecdn.com/Hot-chick_o_87354.jpg" alt="self">
+                    <p class="chat-message">Hallo ma se..</p>
+                </div>
+                <div class="chat friend">
+                    <img class="w3-circle user-photo" src="https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-0/q82/p206x206/10986667_801590539896131_2149355886087880237_n.jpg?oh=123e4a1e0224f4c1ff8edb1fffbac45f&oe=588BBC43&__gda__=1490380613_e442f1b3c21a3385e339b8cbb00f79b7"
+                        alt="self">
+                    <p class="chat-message">Longer text as the previous one xD.......sdfsfsdf sdfsf sdf</p>
+                </div>
+            </div>
+            <form class="chat-form w3-container w3-bottom">
+                <input type="text" class="w3-input w3-border">
+                <button class="w3-btn w3-green send" type="button">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="w3-sidenav w3-white w3-card-2" style="display:none" id="side-nav">
+        <a href="javascript:void(0)" onclick="close_nav()" class="w3-closenav w3-large">Close &times;</a>
+        <a href="#">Browse</a>
+        <a href="#">Search Filter</a>
+        <a href="#">Profile</a>
+        <a href="#">Matches</a>
+    </div>
+</body>
+
+</html>

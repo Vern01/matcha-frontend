@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <title>Matcha</title>
+    </head>
+    <body>
+        <div id="main">
+            <div class="w3-container w3-green w3-top borderless">
+                <div class="w3-opennav w3-xlarge w3-btn w3-green" id="openNav"style="padding: 0;" onclick="open_nav()">&#9776;</div>
+                <i class="title">Matcha</i>
+                <div class="w3-opennav w3-xlarge w3-btn w3-green w3-right" id="logout-button"style="padding: 0;" onclick=""><i style="font-size:24px" class="fa">&#xf011;</i></div>
+            </div>
+            <div class="w3-container" id="contact-list">
+                <ul class="w3-ul w3-card-4">
+                    <li class="w3-padding-16 w3-white w3-display-container">
+                        <img src="https://www.mmfoodmarket.com/images/default-source/products/butcher/boneless-chicken-breasts-seasoned-and-skinless.jpg?sfvrsn=0" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                        <span class="w3-xlarge">Chicken</span><br>
+                        <span><b>This will be the last message that has not been read yet</b></span>
+                        <span class="w3-display-topright w3-container">Today at 10:00</span>
+                    </li>
+                    <li class="w3-padding-16 w3-white  w3-display-container">
+                        <img src="http://img.memecdn.com/Hot-chick_o_87354.jpg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                        <span class="w3-xlarge">Dollie</span><br>
+                        <span>Hey Bae</span>
+                        <span class="w3-display-topright w3-container">Yesterday at 18:00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w3-sidenav w3-white w3-card-2" style="display:none" id="side-nav">
+            <a href="javascript:void(0)" onclick="close_nav()" class="w3-closenav w3-large">Close &times;</a>
+            <a href="#">Browse</a>
+            <a href="#">Search Filter</a>
+            <a href="#">Profile</a>
+            <a href="#">Matches</a>
+        </div>
+    </body>
+</html>

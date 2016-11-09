@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <title>Sign up</title>
+    </head>
+    <body class="w3-content" style="max-width: 850px">
+        <div class="w3-container w3-center w3-card-2 main" style="position: relative;">
+            <h1>Sign up</h1>
+            <a href="login.html" class="sign-up w3-btn w3-green">Log in</a>
+        </div>
+        <div class="add-margin-top">
+            <div id="log-buttons" class="w3-container w3-center w3-border-bottom">
+                <p>
+                    <div class="fb w3-btn w3-blue">
+                        <a href="fb">
+                            <span></span>
+                            <lable>Sign in with Facebook</lable>
+                        </a>
+                    </div>
+                </p>
+                <p>
+                    <div class="google w3-btn w3-red">
+                        <a href="google">
+                            <span></span>
+                            <lable>Sign in with Google+</lable>
+                        </a>
+                    </div>
+                </p>
+                <p>
+                    <div class="error-msg w3-tag w3-padding w3-red w3-center">
+                        <u><strong>Username/password <br></strong></u>
+                        Just testing the panel
+                    </div>
+                </p>
+            </div>
+            <form id="log-form" class="w3-container w3-center" method="POST" action="http://172.16.22.5:3000/signup">
+                <p>
+                    <input type="text" class="w3-input w3-border" placeholder="Username" name="Username">
+                </p>
+                <p>
+                    <input type="password" class="w3-input w3-border"  placeholder="Password" name="Password">
+                </p>
+                    <input type="password" class="w3-input w3-border"  placeholder="Confirm Password" name="Confirm">
+                </p>
+                    <input type="email" class="w3-input w3-border" placeholder="Email" name="email">
+                </p>
+                <button type="submit" onclick="document.getElementById('confirm').style.display='block'" class="w3-btn-block w3-green">Sign up</button>
+            </form>
+            </div>
+            <div id="confirm" class="w3-modal">
+                <div class="w3-modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('confirm').style.display='none'" class="w3-closebtn">&times;</span>
+                        <p>
+                            <form class="w3-container" action="index.html" method="post">
+                                <p>
+                                    <input class="w3-input w3-border"type="text" placeholder="Check email for code.">
+                                </p>
+                                <p>
+                                    <button type="button" class="w3-btn-block w3-green">Submit</button>
+                                </p>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("http://www.splendidwallpaper.com/wp-content/uploads/valentines-day-wallpaper-romantic-couple-1920x1920.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.borderless {
+    border: none;
+}
+
+#side-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.chatbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 34px;
+    min-width: 287px;
+}
+
+.chatlog {
+    height: calc(100% - 36.28px - 50px);
+    padding: 3px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chatlog::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chatlog::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .1);
+}
+
+.chat {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.friend {
+    flex-flow: row wrap;
+}
+
+.self {
+    flex-flow: row-reverse wrap;
+}
+
+.chat .user-photo {
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.chat .chat-message {
+    max-width: 70%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    background: #1ddced;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.friend .chat-message {
+    background: #1adda4;
+}
+
+.self .chat-message {
+    background: #1ddced;
+}
+
+.self .user-photo {
+    float: right;
+}
+
+.chat-form {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+    background: #ddd;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-form textarea {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1.3em;
+    color: #333;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.send {
+    border-radius: 6px;
+    margin-left: 6px;
+}
