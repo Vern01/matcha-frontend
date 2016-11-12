@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <title>Log in</title>
+    </head>
+    <body class="w3-content">
+        <div class="w3-container w3-center w3-card-2 main" style="position: relative;">
+            <h1>Log in</h1>
+            <a href="signup.html" class="sign-up w3-btn w3-green">Sign up</a>
+        </div>
+        <div class="add-margin-top">
+            <div id="log-buttons" class="w3-container w3-center w3-border-bottom">
+                <p>
+                <div class="fb w3-btn w3-blue">
+                    <a href="fb">
+                       <span></span>
+                       <lable>Sign in with Facebook</lable>
+                    </a>
+                </div></p>
+                <p>
+                <div class="google w3-btn w3-red">
+                <a href="google">
+                   <span></span>
+                   <lable>Sign in with Google+</lable>
+                </a>
+                </div></p>
+            </div>
+            <form id="log-form" class="w3-container w3-center" action="index.html" method="post">
+                <p>
+                    <input type="text" class="w3-input w3-border" placeholder="Username"></p>
+                <p>
+                    <input type="password" class="w3-input w3-border"  placeholder="Password"></p>
+                <button type="submit" class="w3-btn-block w3-green">Log  in</button>
+            </form>
+        </div>
+    </body>
+</html>

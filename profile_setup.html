@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <title>Profile Setup</title>
+    </head>
+    <body
+    class="w3-content w3-center" style="max-width: 850px">
+        <div class="w3-container w3-center w3-card-2 main">
+            <h1>Profile Setup</h1>
+        </div>
+        <div class="w3-content w3-center">
+            <div id="main-img">
+                <p>
+                    <img class="w3-circle" src="https://secure.static.tumblr.com/64f785dc88a8602131861d77debeda1d/ythxadu/Qm4n50u24/tumblr_static_icon.jpg" alt="oops" />
+                </p>
+            </div>
+            <div id="bar" class="w3-container">
+                <img class="w3-circle" src="https://secure.static.tumblr.com/64f785dc88a8602131861d77debeda1d/ythxadu/Qm4n50u24/tumblr_static_icon.jpg" alt="oops" />
+                <img src="https://secure.static.tumblr.com/64f785dc88a8602131861d77debeda1d/ythxadu/Qm4n50u24/tumblr_static_icon.jpg" alt="oops" />
+                <img src="https://secure.static.tumblr.com/64f785dc88a8602131861d77debeda1d/ythxadu/Qm4n50u24/tumblr_static_icon.jpg" alt="oops" />
+                <img src="https://secure.static.tumblr.com/64f785dc88a8602131861d77debeda1d/ythxadu/Qm4n50u24/tumblr_static_icon.jpg" alt="oops" />
+                <img src="https://secure.static.tumblr.com/64f785dc88a8602131861d77debeda1d/ythxadu/Qm4n50u24/tumblr_static_icon.jpg" alt="oops" />
+            </div>
+        </div>
+        <p>
+        <div class="w3-dropdown-hover">
+            <button class="w3-btn w3-green" style="min-width: 100px; min-height: 50px;">My Gender &#9662;</button>
+            <div class="w3-dropdown-content w3-border">
+                <a href="#">Male</a>
+                <a href="#">Female</a>
+                <a href="#">Other</a>
+            </div>
+        </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-btn w3-green" style="min-width: 100px; min-height: 50px;">Intrested in &#9662;</button>
+                <div class="w3-dropdown-content w3-border">
+                    <a href="#">Male</a>
+                    <a href="#">Female</a>
+                    <a href="#">Both</a>
+                    <a href="#">Other</a>
+                </div>
+            </div>
+        </p>
+        <p class="padding-10" >
+            <input type="text" placeholder="Tags" class="w3-input w3-border"style="min-height: 50px;">
+        </p>
+        <p class="padding-10">
+            <textarea placeholder="Bio" class="w3-input w3-border memo"></textarea>
+        </p>
+        <p>
+            <button type="button" class="w3-btn w3-green" style="min-width: 100px; min-height: 50px;">Done</button>
+        </p>
+        <div id="confirm" class="w3-modal">
+            <div class="w3-modal-content center-object" style="max-width: 200px;">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('confirm').style.display='none'" class="w3-closebtn">&times;</span>
+                    <p>
+                        <form class="w3-container" action="index.html" method="post">
+                            <p>
+                                <button type="button" class="w3-btn-block w3-green">Take a Picture</button>
+                            </p>
+                            <p>
+                                <button type="button" class="w3-btn-block w3-green">Upload</button>
+                            </p>
+                        </form>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button id="new-img-btn"class="w3-btn-floating-large w3-teal" onclick="document.getElementById('confirm').style.display='block'">+</button>
+    </body>
+</html>
+
+<!--
+https://secure.static.tumblr.com/64f785dc88a8602131861d77debeda1d/ythxadu/Qm4n50u24/tumblr_static_icon.jpg
+
+http://img.memecdn.com/Hot-chick_o_87354.jpg
+-->
